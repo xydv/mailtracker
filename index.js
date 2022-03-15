@@ -8,4 +8,4 @@ app.get("/", (req, res) => {
     bot.sendMessage(process.env.CHATID, `Name :- ${req.query.name}\nMail :- ${req.query.mail}\nSubject :- ${req.query.subject}\nHas Been Readed By Receiver!!`);
     console.log(req.query);
 });
-app.listen(3000);
+app.listen(process.env.PORT);
